@@ -167,7 +167,7 @@ if rank_col in work.columns:
 
 fig = px.scatter(
     work, x="binding_PSSM_score", y=pct_col, color=color_axis,
-    color_continuous_scale="Viridis_r" if color_axis == "promiscuity_index" else "Viridis",
+    color_continuous_scale="cool_r" if color_axis == "promiscuity_index" else "cool",
     hover_data={c: True for c in hover_cols},
     labels={"binding_PSSM_score": "Binding PSSM score", pct_col: f"{selected_kinase} percentile"},
     height=550,
